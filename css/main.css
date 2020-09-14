@@ -1,8 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.header{
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.none {
+    display: none!important;
+}
+
+/*Header*/
+.header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,7 +34,7 @@ body {
     background-position: center;
 }
 
-.header-title{
+.header-title {
     margin: 25px;
     font-weight: 700;
     font-size: 56px;
@@ -27,7 +43,7 @@ body {
     color: #FFFFFF;
 }
 
-.header-subtitle{
+.header-subtitle {
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
@@ -37,11 +53,64 @@ body {
     color: #FFFFFF;
 }
 
-.header-arrow{
+.header-arrow {
     width: 48px;
     height: 48px;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translate(-50%,0);
+}
+
+/*Portfolio*/
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+.portfolio-header { 
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: black;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.portfolio-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 540px;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+}
+
+.card:last-child, .card:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 130%;
+    color: black;
+    margin: 0;
 }
