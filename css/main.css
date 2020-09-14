@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    color: #000000;
 }
 
 .container {
@@ -85,10 +86,26 @@ body {
 
 .card {
     margin-bottom: 30px;
-    padding: 20px;
     max-width: 540px;
     background-color: white;
     box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: transform 0.2s ease-in;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+    color: rgb(39,91,236);
 }
 
 .card:last-child, .card:nth-last-child(2) {
@@ -105,13 +122,11 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.3;
-    color: #000000;
 }
 
 .card p {
     font-size: 16px;
     line-height: 1.3;
-    color: black;
     margin: 0;
 }
 
@@ -189,6 +204,13 @@ body {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: #1E4776;
 }
 
 .footer-contacts p {
@@ -197,4 +219,64 @@ body {
     font-size: 16px;
     line-height: 1.3;
 }
+
+
+/*project*/
+
+.project {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.project-header {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.3;
+}
+
+.project-img {
+    margin-bottom: 70px;
+}
+
+.project-description {
+    max-width: 730px;
+    margin: 0 auto 60px;
+
+}
+
+.project-description p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.project-btn-back {
+    display: inline-block;
+    height: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    border: 3px solid #275BEC;
+    border-radius: 50px;
+    
+    
+    line-height: 54px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #275BEC;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.project-btn-back:hover {
+    background-color: #275BEC;
+    color: white;
+}
+
 
